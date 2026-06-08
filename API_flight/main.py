@@ -4,8 +4,8 @@ import requests
 from datetime import datetime, timezone, timedelta
 from supabase import create_client
 
-SUPABASE_URL = "https://gmkccnmvalhopasfyowe.supabase.co"
-SUPABASE_KEY = "sb_publishable_iWsQ3dxCc8S2gcnDzS1z5w_zbiX8Py_"
+SUPABASE_URL = os.environ["SUPABASE_URL"]
+SUPABASE_KEY = os.environ["SUPABASE_SERVICE_KEY"]
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
